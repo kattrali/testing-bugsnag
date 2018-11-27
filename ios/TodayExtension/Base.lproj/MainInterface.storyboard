@@ -21,20 +21,28 @@
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="egV-MV-pO2">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="110"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E4i-UB-tdY">
-                                        <rect key="frame" x="0.0" y="0.0" width="152" height="110"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E4i-UB-tdY" userLabel="Increment Button">
+                                        <rect key="frame" x="0.0" y="0.0" width="96" height="110"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="53"/>
                                         <state key="normal" title="➕"/>
                                         <connections>
                                             <action selector="handleButtonClicked:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="2jI-Yz-rwr"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="99999" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GcN-lo-r42" userLabel="Label">
-                                        <rect key="frame" x="168" y="0.0" width="152" height="110"/>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="999" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GcN-lo-r42" userLabel="Label">
+                                        <rect key="frame" x="112" y="0.0" width="96" height="110"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="46"/>
                                         <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qAw-UZ-UJN" userLabel="Decrement Button">
+                                        <rect key="frame" x="224" y="0.0" width="96" height="110"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="53"/>
+                                        <state key="normal" title="➖"/>
+                                        <connections>
+                                            <action selector="handleButtonClicked:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="IE1-Ov-71l"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </stackView>
                         </subviews>

@@ -56,11 +56,15 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     
   }
   
-  @IBAction func handleButtonClicked(_ sender: Any) {
+  @IBAction func handleButtonClicked(_ sender: UIButton) {
     
+    if sender.tag == 0 {
       shared.increment()
+    } else {
+      shared.decrement()
+    }
     
-      updateUI()
+    updateUI()
     
   }
 }
