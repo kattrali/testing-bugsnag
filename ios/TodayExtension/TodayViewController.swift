@@ -13,7 +13,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         
   @IBOutlet weak var textLabel: UILabel!
   
-  var counter : Int = 0
+  var shared : Shared = Shared()
   
   required init?(coder: NSCoder) {
     
@@ -52,13 +52,13 @@ class TodayViewController: UIViewController, NCWidgetProviding {
   
   func updateUI() {
     
-      textLabel.text = "\(counter)"
+      textLabel.text = "\(shared.getCount())"
     
   }
   
   @IBAction func handleButtonClicked(_ sender: Any) {
     
-      counter += 1
+      shared.increment()
     
       updateUI()
     
