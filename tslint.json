@@ -1,0 +1,31 @@
+{
+  "extends": ["tslint:recommended", "tslint-react"],
+  "rules": {
+    "semicolon": [false],
+    "trailing-comma": [false],
+    "member-access": [false],
+    "interface-name": [false],
+    "jsx-no-multiline-js": [false],
+    "ordered-imports": [false],
+    "object-literal-sort-keys": [false],
+    "arrow-parens": [false],
+    "comment-format": [false],
+    "only-arrow-functions": [false],
+    "max-classes-per-file": [false],
+    "no-unused-expression": [true, "allow-fast-null-checks"],
+    "no-empty": [false],
+    "ban-types": [
+      true,
+      ["Object", "Avoid using the `Object` type. Did you mean `object`?"],
+      ["Boolean", "Avoid using the `Boolean` type. Did you mean `boolean`?"],
+      ["Number", "Avoid using the `Number` type. Did you mean `number`?"],
+      ["String", "Avoid using the `String` type. Did you mean `string`?"],
+      ["Symbol", "Avoid using the `Symbol` type. Did you mean `symbol`?"]
+    ],
+    "object-literal-key-quotes": [true, "as-needed"],
+    "max-line-length": [false],
+    "jsx-wrap-multiline": [false],
+    "no-switch-case-fall-through": [true],
+    "jsx-curly-spacing": [false, "never"]
+  }
+}

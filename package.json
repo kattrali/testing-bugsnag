@@ -1,0 +1,30 @@
+{
+    "name": "MyTestApp",
+    "version": "0.0.1",
+    "private": true,
+    "scripts": {
+        "start": "node node_modules/react-native/local-cli/cli.js start",
+        "watch": "tsc -w --noEmit",
+        "lint": "tslint -c tslint.json",
+        "lint-all": "yarn lint 'App/**/*.{ts,tsx}'"
+    },
+    "dependencies": {
+        "react": "16.2.0",
+        "react-native": "0.53.3"
+    },
+    "devDependencies": {
+        "@types/prop-types": "^15.5.2",
+        "@types/react": "^16.0.5",
+        "@types/react-native": "^0.47.8",
+        "babel-jest": "23.6.0",
+        "babel-preset-react-native": "3.0.1",
+        "jest": "23.6.0",
+        "react-test-renderer": "16.2.0",
+        "react-native-typescript-transformer": "1.2.4",
+        "ts-jest": "^23.10.4",
+        "tslint": "^5.6.0",
+        "tslint-react": "^3.2.0",
+        "typescript": "2.8.1",
+        "prettier": "^1.6.1"
+    }
+}

@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "es2015",
+    "module": "es2015",
+    "jsx": "react-native",
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "allowJs": true,
+    "noUnusedLocals": true,
+    "experimentalDecorators": true,
+    "lib": ["dom", "es7"],
+    "noEmit": true,
+    "skipLibCheck": true // skipping due to conflict between node and react-native typings
+  }
+}
