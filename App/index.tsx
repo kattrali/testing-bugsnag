@@ -1,5 +1,6 @@
 import React, { Component } from "react"
 import { View, Text, StyleSheet } from "react-native"
+import Config from "react-native-config"
 
 interface State {
     isLoading: boolean
@@ -21,9 +22,12 @@ export class AppInit extends Component<{}, State> {
     }
 
     render() {
+        const testValue = Config.TEST_VALUE
+
         return (
             <View style={styles.container}>
                 <Text style={styles.text}>TESTAPP</Text>
+                <Text style={styles.text}>Test value: {testValue}</Text>
             </View>
         )
     }
