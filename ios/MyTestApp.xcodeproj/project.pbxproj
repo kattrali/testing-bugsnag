@@ -33,6 +33,8 @@
 		DEB8F94421AD37B80068A71B /* TodayExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DEB8F93821AD37B80068A71B /* TodayExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		DEB8F99021AD411D0068A71B /* SharedLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB8F98F21AD411D0068A71B /* SharedLogic.swift */; };
 		DEB8F99121AD411D0068A71B /* SharedLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB8F98F21AD411D0068A71B /* SharedLogic.swift */; };
+		DEB8FB4221AD6F700068A71B /* Bugsnag.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEB8FB4121AD6F700068A71B /* Bugsnag.framework */; };
+		DEB8FB4321AD6F7B0068A71B /* Bugsnag.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEB8FB4121AD6F700068A71B /* Bugsnag.framework */; };
 		FDA8DF31D9624F858FEA2EDE /* libBugsnagReactNative.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C89E6129ABB4D18876AFA19 /* libBugsnagReactNative.a */; };
 /* End PBXBuildFile section */
 
@@ -401,6 +403,7 @@
 		DEB8F98D21AD40E00068A71B /* TodayExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TodayExtension.entitlements; sourceTree = "<group>"; };
 		DEB8F98E21AD411D0068A71B /* MyTestApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyTestApp-Bridging-Header.h"; sourceTree = "<group>"; };
 		DEB8F98F21AD411D0068A71B /* SharedLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedLogic.swift; sourceTree = "<group>"; };
+		DEB8FB4121AD6F700068A71B /* Bugsnag.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Bugsnag.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -416,6 +419,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEB8FB4221AD6F700068A71B /* Bugsnag.framework in Frameworks */,
 				ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */,
 				5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */,
 				146834051AC3E58100842450 /* libReact.a in Frameworks */,
@@ -439,6 +443,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEB8FB4321AD6F7B0068A71B /* Bugsnag.framework in Frameworks */,
 				DEB8F93A21AD37B80068A71B /* NotificationCenter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -567,6 +572,7 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DEB8FB4121AD6F700068A71B /* Bugsnag.framework */,
 				2D16E6891FA4F8E400B85C8A /* libReact.a */,
 				DEB8F93921AD37B80068A71B /* NotificationCenter.framework */,
 				7A3BECECEB354AA699C5F7BE /* libz.tbd */,

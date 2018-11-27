@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Bugsnag
 
 class Shared : NSObject {
   
@@ -18,6 +19,8 @@ class Shared : NSObject {
     userDefaults = UserDefaults.init(suiteName: "testApp")!
     
     count = userDefaults.integer(forKey: "count")
+    
+    Bugsnag.start(withApiKey: "add-bugsnag-key-here")
     
     super.init()
     
@@ -45,7 +48,13 @@ class Shared : NSObject {
   
   func testBugsnag() -> Void {
     
-    print("testBugsnag")
+    let exception = NSException(
+      name:NSExceptionName(rawValue: "NamedException"),
+      reason:"Test notification from Swift!",
+      userInfo:nil
+    )
+    
+    Bugsnag.notify(exception)
     
   }
   
