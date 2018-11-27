@@ -64,7 +64,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
   
   @IBAction func handleBugsnagButtonClicked(_ sender: UIButton) {
     
-    print("Trigger Bugsnag")
+    shared.testBugsnag()
     
   }
 }

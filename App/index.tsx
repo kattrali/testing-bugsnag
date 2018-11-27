@@ -1,6 +1,5 @@
 import React, { Component } from "react"
 import { View, Text, StyleSheet, Button } from "react-native"
-import Config from "react-native-config"
 import { Client } from "bugsnag-react-native"
 
 interface State {
@@ -32,10 +31,9 @@ export class AppInit extends Component<{}, State> {
     }
 
     testBugsnag() {
-        const key = Config.__RN_CONFIG_BUGSNAG_ID
-        const bugsnag = new Client(key)
-
-        bugsnag.notify(new Error("Test notification from React-Native!"))
+        // const key = Config.__RN_CONFIG_BUGSNAG_ID
+        // const bugsnag = new Client(key)
+        // bugsnag.notify(new Error("Test notification from React-Native!"))
     }
 }
 

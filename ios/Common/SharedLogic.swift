@@ -13,7 +13,6 @@ class Shared : NSObject {
   private let userDefaults: UserDefaults
   private var count : Int = 0
   
-  
   override init() {
     
     userDefaults = UserDefaults.init(suiteName: "testApp")!
@@ -42,6 +41,12 @@ class Shared : NSObject {
   
   func getCount() -> Int {
     return count
+  }
+  
+  func testBugsnag() -> Void {
+    
+    print("testBugsnag")
+    
   }
   
 }
