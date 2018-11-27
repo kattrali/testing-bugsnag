@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="110"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E4i-UB-tdY" userLabel="Increment Button">
-                                        <rect key="frame" x="0.0" y="0.0" width="96" height="110"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="68" height="110"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="53"/>
                                         <state key="normal" title="➕"/>
                                         <connections>
@@ -30,17 +30,24 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="999" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GcN-lo-r42" userLabel="Label">
-                                        <rect key="frame" x="112" y="0.0" width="96" height="110"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="46"/>
+                                        <rect key="frame" x="84" y="0.0" width="68" height="110"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="37"/>
                                         <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qAw-UZ-UJN" userLabel="Decrement Button">
-                                        <rect key="frame" x="224" y="0.0" width="96" height="110"/>
+                                        <rect key="frame" x="168" y="0.0" width="68" height="110"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="53"/>
                                         <state key="normal" title="➖"/>
                                         <connections>
                                             <action selector="handleButtonClicked:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="IE1-Ov-71l"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="hzW-37-uBZ" userLabel="Test Bugsnag Button">
+                                        <rect key="frame" x="252" y="0.0" width="68" height="110"/>
+                                        <state key="normal" title="Test bugsnag"/>
+                                        <connections>
+                                            <action selector="handleBugsnagButtonClicked:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="lEk-3n-WSk"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -58,6 +65,7 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="110"/>
                     <connections>
+                        <outlet property="bugsnagButton" destination="hzW-37-uBZ" id="gVg-2a-JAm"/>
                         <outlet property="textLabel" destination="GcN-lo-r42" id="HJS-oF-Z2c"/>
                     </connections>
                 </viewController>

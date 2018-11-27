@@ -32,7 +32,7 @@ export class AppInit extends Component<{}, State> {
     }
 
     testBugsnag() {
-        const key = Config.BUGSNAG_KEY
+        const key = Config.__RN_CONFIG_BUGSNAG_ID
         const bugsnag = new Client(key)
 
         bugsnag.notify(new Error("Test notification from React-Native!"))

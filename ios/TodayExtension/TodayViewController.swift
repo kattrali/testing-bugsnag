@@ -12,6 +12,7 @@ import NotificationCenter
 class TodayViewController: UIViewController, NCWidgetProviding {
         
   @IBOutlet weak var textLabel: UILabel!
+  @IBOutlet weak var bugsnagButton: UIButton!
   
   var shared : Shared = Shared()
   
@@ -19,30 +20,23 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     
       super.init(coder: coder)
     
-      print("extension initialized")
-    
   }
   
   override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
     
       super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
     
-      print("extension initialized 2")
   }
   
   override func viewDidLoad() {
     
-      super.viewDidLoad()
+    super.viewDidLoad()
     
-      print("viewDidLoad")
-    
-    
+    bugsnagButton.titleLabel?.textAlignment = .center
     
   }
         
   func widgetPerformUpdate(completionHandler: (@escaping (NCUpdateResult) -> Void)) {
-    
-      print("widgetPerformUpdate")
     
       updateUI()
     
@@ -65,6 +59,12 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     }
     
     updateUI()
+    
+  }
+  
+  @IBAction func handleBugsnagButtonClicked(_ sender: UIButton) {
+    
+    print("Trigger Bugsnag")
     
   }
 }
