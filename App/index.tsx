@@ -1,6 +1,7 @@
 import React, { Component } from "react"
-import { View, Text, StyleSheet } from "react-native"
+import { View, Text, StyleSheet, Button } from "react-native"
 import Config from "react-native-config"
+import { Client } from "bugsnag-react-native"
 
 interface State {
     isLoading: boolean
@@ -22,14 +23,19 @@ export class AppInit extends Component<{}, State> {
     }
 
     render() {
-        const testValue = Config.TEST_VALUE
-
         return (
             <View style={styles.container}>
                 <Text style={styles.text}>TESTAPP</Text>
-                <Text style={styles.text}>Test value: {testValue}</Text>
+                <Button onPress={this.testBugsnag} title="Trigger BS Error" />
             </View>
         )
+    }
+
+    testBugsnag() {
+        const key = Config.BUGSNAG_KEY
+        const bugsnag = new Client(key)
+
+        bugsnag.notify(new Error("Test notification from React-Native!"))
     }
 }
 

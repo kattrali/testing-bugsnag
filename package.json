@@ -11,7 +11,8 @@
     "dependencies": {
         "react": "16.2.0",
         "react-native": "0.53.3",
-        "react-native-config": "^0.11.5"
+        "react-native-config": "^0.11.5",
+        "bugsnag-react-native": "^2.9.1"
     },
     "devDependencies": {
         "@types/prop-types": "^15.5.2",
