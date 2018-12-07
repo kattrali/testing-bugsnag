@@ -17,24 +17,26 @@ class TodayViewController: UIViewController, NCWidgetProviding {
   var shared : Shared = Shared()
   
   required init?(coder: NSCoder) {
-    
       super.init(coder: coder)
-    
+      initializeBugsnag()
   }
   
   override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
-    
       super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
-    
+      initializeBugsnag()
   }
   
   override func viewDidLoad() {
     
     super.viewDidLoad()
-    
+
     bugsnagButton.titleLabel?.textAlignment = .center
     
   }
+
+    func initializeBugsnag() {
+        Bugsnag.start(withApiKey: "MY-API-KEY")
+    }
         
   func widgetPerformUpdate(completionHandler: (@escaping (NCUpdateResult) -> Void)) {
     

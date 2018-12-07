@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import Bugsnag
 
 class Shared : NSObject {
   
@@ -19,8 +18,6 @@ class Shared : NSObject {
     userDefaults = UserDefaults.init(suiteName: "testApp")!
     
     count = userDefaults.integer(forKey: "count")
-    
-    Bugsnag.start(withApiKey: "add-bugsnag-key-here")
     
     super.init()
     
