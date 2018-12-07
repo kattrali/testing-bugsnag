@@ -24,7 +24,9 @@
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
-		ACCEC9F17C3B47C98D3051D3 /* libReactNativeConfig.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FB71D89E15A4744B7BA3C95 /* libReactNativeConfig.a */; };
+		8A2859B821B9EB9E00F0C86B /* libBugsnagReactNative.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DEB8FB0021AD4F380068A71B /* libBugsnagReactNative.a */; };
+		8A2859BC21B9EDBA00F0C86B /* libBugsnagStatic.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A2859BB21B9EDBA00F0C86B /* libBugsnagStatic.a */; };
+		8A2859BE21B9EDFC00F0C86B /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A2859BD21B9EDFC00F0C86B /* libc++.tbd */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
 		D6F3B40457C942FCB5D77515 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A3BECECEB354AA699C5F7BE /* libz.tbd */; };
 		DEB8F93A21AD37B80068A71B /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEB8F93921AD37B80068A71B /* NotificationCenter.framework */; };
@@ -33,9 +35,6 @@
 		DEB8F94421AD37B80068A71B /* TodayExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DEB8F93821AD37B80068A71B /* TodayExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		DEB8F99021AD411D0068A71B /* SharedLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB8F98F21AD411D0068A71B /* SharedLogic.swift */; };
 		DEB8F99121AD411D0068A71B /* SharedLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB8F98F21AD411D0068A71B /* SharedLogic.swift */; };
-		DEB8FB4221AD6F700068A71B /* Bugsnag.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEB8FB4121AD6F700068A71B /* Bugsnag.framework */; };
-		DEB8FB4321AD6F7B0068A71B /* Bugsnag.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEB8FB4121AD6F700068A71B /* Bugsnag.framework */; };
-		FDA8DF31D9624F858FEA2EDE /* libBugsnagReactNative.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C89E6129ABB4D18876AFA19 /* libBugsnagReactNative.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -393,6 +392,9 @@
 		7A3BECECEB354AA699C5F7BE /* libz.tbd */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		88AEE32443654AC0B1E62196 /* ReactNativeConfig.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = ReactNativeConfig.xcodeproj; path = "../node_modules/react-native-config/ios/ReactNativeConfig.xcodeproj"; sourceTree = "<group>"; };
+		8A2859B921B9ED4D00F0C86B /* libBugsnagStatic.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libBugsnagStatic.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A2859BB21B9EDBA00F0C86B /* libBugsnagStatic.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libBugsnagStatic.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A2859BD21B9EDFC00F0C86B /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
 		DEB8F93821AD37B80068A71B /* TodayExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TodayExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEB8F93921AD37B80068A71B /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
@@ -419,7 +421,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEB8FB4221AD6F700068A71B /* Bugsnag.framework in Frameworks */,
+				8A2859B821B9EB9E00F0C86B /* libBugsnagReactNative.a in Frameworks */,
 				ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */,
 				5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */,
 				146834051AC3E58100842450 /* libReact.a in Frameworks */,
@@ -433,8 +435,6 @@
 				832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */,
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
-				ACCEC9F17C3B47C98D3051D3 /* libReactNativeConfig.a in Frameworks */,
-				FDA8DF31D9624F858FEA2EDE /* libBugsnagReactNative.a in Frameworks */,
 				D6F3B40457C942FCB5D77515 /* libz.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -443,7 +443,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEB8FB4321AD6F7B0068A71B /* Bugsnag.framework in Frameworks */,
+				8A2859BE21B9EDFC00F0C86B /* libc++.tbd in Frameworks */,
+				8A2859BC21B9EDBA00F0C86B /* libBugsnagStatic.a in Frameworks */,
 				DEB8F93A21AD37B80068A71B /* NotificationCenter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -572,6 +573,9 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8A2859BD21B9EDFC00F0C86B /* libc++.tbd */,
+				8A2859BB21B9EDBA00F0C86B /* libBugsnagStatic.a */,
+				8A2859B921B9ED4D00F0C86B /* libBugsnagStatic.a */,
 				DEB8FB4121AD6F700068A71B /* Bugsnag.framework */,
 				2D16E6891FA4F8E400B85C8A /* libReact.a */,
 				DEB8F93921AD37B80068A71B /* NotificationCenter.framework */,
@@ -1545,9 +1549,11 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.MyTestApp.TodayExtension;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "MyTestApp-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -1593,8 +1599,10 @@
 				);
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.MyTestApp.TodayExtension;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "MyTestApp-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
